@@ -1,11 +1,17 @@
-use 5.012003;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
-    NAME              => 'Dancer::Plugin::EmptyGIF',
-    VERSION_FROM      => 'lib/Dancer/Plugin/EmptyGIF.pm',
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
-    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'lib/Dancer/Plugin/EmptyGIF.pm', # retrieve abstract from module
-       AUTHOR         => 'David Moreno <david@axiombox.com>') : ()),
-);
+name     'Dancer-Plugin-EmptyGIF';
+all_from 'lib/Dancer/Plugin/EmptyGIF.pm';
+author   q{David Moreno <david@axiombox.com>};
+license  'mit';
+
+perl_version '5.010';
+
+requires 'Dancer' => '1.3091';
+
+test_requires 'lib::abs';
+test_requires 'Test::More';
+
+auto_install;
+
+WriteAll;

@@ -2,5 +2,9 @@ Changes
 Makefile.PL
 MANIFEST
 README
-t/Dancer-Plugin-EmptyGIF.t
+t/00-load.t
+t/01-generic.t
+t/02-original.t
+t/03-content.t
+t/lib/MyApp.pm
 lib/Dancer/Plugin/EmptyGIF.pm
