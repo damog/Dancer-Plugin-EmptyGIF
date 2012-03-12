@@ -22,7 +22,7 @@ This will set your set your current request response to be an empty
 gif, this means, it will return binary data for the image and
 set the appropriate headers. You should always "return empty_gif".
 
-=head2 WHY
+=head1 WHY
 
 An empty gif response is specially useful when you're building a
 webservice that processes all the URL and/or query string parameters
@@ -37,7 +37,7 @@ David Moreno C<< <david at axiombox dot com> >>
 
 =head1 CODE
 
-L<http://github.com/damog/Dancer-Plugin-EmptyGIF
+L<http://github.com/damog/Dancer-Plugin-EmptyGIF>
 
 =head1 LICENSE
 
