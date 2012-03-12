@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Dancer-Plugin-EmptyGIF.t
+lib/Dancer/Plugin/EmptyGIF.pm
